@@ -1,4 +1,3 @@
-Claro, aquí tienes un temario que cubre los puntos que has mencionado:
 
 ---
 
