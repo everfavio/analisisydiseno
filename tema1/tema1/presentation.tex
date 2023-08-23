@@ -1,0 +1,110 @@
+\documentclass{beamer}
+
+% Configuración del tema Dracula
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{listings}
+
+% Definición de colores
+\definecolor{draculaBackground}{RGB}{40,42,54}
+\definecolor{draculaForeground}{RGB}{248,248,242}
+\definecolor{draculaCyan}{RGB}{139,233,253}
+\definecolor{draculaPink}{RGB}{255,121,198}
+\definecolor{draculaPurple}{RGB}{189,147,249}
+\definecolor{draculaGreen}{RGB}{80,250,123}
+\definecolor{draculaRed}{RGB}{255,85,85}
+\definecolor{draculaYellow}{RGB}{241,250,140}
+
+% Configuración del tema beamer
+\setbeamercolor{background canvas}{bg=draculaBackground}
+\setbeamercolor{normal text}{fg=draculaForeground}
+\setbeamercolor{structure}{fg=draculaPink}
+\setbeamercolor{alerted text}{fg=draculaRed}
+\setbeamercolor{example text}{fg=draculaGreen}
+
+% Configuración de los items
+\setbeamertemplate{itemize item}{\color{draculaPink}\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\bullet$}}
+\setbeamertemplate{itemize subitem}{\color{draculaCyan}\tiny\raise1.5pt\hbox{\donotcoloroutermaths$-$}}
+
+\title{Análisis y Diseño de Sistemas: Generalidades}
+\author{}
+\date{}
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Definición y tipos de sistemas}
+\textbf{Un sistema} es un conjunto organizado de elementos interrelacionados que trabajan juntos hacia un objetivo común. Estos elementos pueden ser tanto abstractos como concretos, dependiendo del contexto del sistema.
+
+\textbf{Sistema Abierto:}
+\begin{itemize}
+    \item Definición: Un sistema que interactúa constantemente con su entorno, recibiendo entradas y entregando salidas. En otras palabras, tiene intercambio de información, energía o materia con su exterior.
+    \item Ejemplo: Un ecosistema es un sistema abierto porque recibe energía del sol, intercambia gases con la atmósfera y tiene ciclos de agua y nutrientes.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definición y tipos de sistemas }
+\textbf{Sistema Cerrado:}
+\begin{itemize}
+    \item Definición: Un sistema que no intercambia materia o energía con su entorno, aunque puede intercambiar información.
+    \item Ejemplo: Una botella sellada de agua es un sistema cerrado, no permite que nada entre o salga, aunque puede transferir calor con su entorno.
+\end{itemize}
+
+\textbf{Sistema Adaptativo:}
+\begin{itemize}
+    \item Definición: Un sistema que tiene la capacidad de modificar su estructura o comportamiento en respuesta a cambios en el entorno.
+    \item Ejemplo: El sistema inmunológico humano es adaptativo. Aprende y se adapta a amenazas externas, como virus o bacterias.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definición y tipos de sistemas }
+\textbf{Sistema Complejo:}
+\begin{itemize}
+    \item Definición: Un sistema compuesto por múltiples elementos interconectados e interdependientes, que exhiben comportamientos emergentes y no lineales.
+    \item Ejemplo: Las ciudades son sistemas complejos donde infraestructura, economía, cultura y población interactúan en formas intrincadas y a menudo impredecibles.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evolución histórica de los métodos de desarrollo}
+El desarrollo de sistemas ha pasado por diferentes fases y metodologías a lo largo de las décadas:
+
+\begin{itemize}
+    \item Código y corrección (1960s): En los primeros días de la computación, el desarrollo era ad hoc. Se escribía el código, se probaba y se corregían los errores a medida que surgían.
+    \item Desarrollo en cascada (1970s): Se introdujo una estructura de fases secuenciales, desde la definición de requisitos hasta la implementación y el mantenimiento. Sin embargo, era rígido y no se adaptaba bien a los cambios.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evolución histórica de los métodos de desarrollo }
+\begin{itemize}
+    \item Desarrollo iterativo e incremental (1980s-1990s): Se dieron cuenta de la necesidad de repetir ciertas fases y adaptarse a los cambios, dando lugar a modelos como el Espiral.
+    \item Enfoque orientado a objetos (1990s): Los sistemas empezaron a diseñarse en torno a "objetos" y su interacción, usando lenguajes como C++ y Java.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Herramientas modernas para el desarrollo de sistemas}
+Las herramientas actuales buscan optimizar y automatizar el proceso de desarrollo:
+
+\begin{itemize}
+    \item Entornos Integrados de Desarrollo (IDEs): Plataformas como Eclipse o Visual Studio proporcionan un conjunto de herramientas integradas para escribir, probar y depurar código.
+    \item Sistemas de Control de Versiones: Como Git, permiten rastrear y gestionar cambios en el código fuente, facilitando la colaboración.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Herramientas modernas para el desarrollo de sistemas }
+\begin{itemize}
+    \item Gestión de Dependencias y Paquetes: Herramientas como npm o Maven permiten a los desarrolladores añadir y gestionar librerías y paquetes externos en sus proyectos.
+    \item Integración y Entrega Continua (CI/CD): Plataformas como Jenkins automatizan la construcción, prueba y despliegue de aplicaciones.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Introducción a metodologías ágiles y enfoque tradicional}
+\textbf{Metodologías Ágiles:} Son un conjunto de prácticas y valores que buscan entregar valor rápidamente al usuario, adaptándose a los cambios y promoviendo la colaboración entre equipos. Algunas metodologías populares son Scrum y Kanban. En Scrum, por ejemplo, el trabajo se divide en "sprints" de 2 a 4 semanas, al final de los cuales se entrega una pieza funcional del sistema.
+
+\textbf{Enfoque Tradicional (Waterfall o Cascada):} Es un proceso lineal y secuencial donde cada fase del desarrollo (requisitos, diseño, implementación, pruebas) debe completarse antes de pasar a la siguiente. Es más adecuado para proyectos con requisitos bien definidos y poco cambio.
+\end{frame}
+\end{document}
