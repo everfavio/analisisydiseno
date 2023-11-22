@@ -189,7 +189,7 @@ db.micoleccion.count()
 db.miColeccion.insertMany([
     { nombre: "Ana", edad: 28, ciudad: "Madrid" },
     { nombre: "Luis", edad: 34, peliculaFavorita: "El eterno resplandor de una mente sin recuerdos" },
-    { nombre: "Carlos", edad: 23, colorPreferido: "Verde fuxia" }
+    { nombre: "Carlos", edad: 23, colorPreferido: "Verde fuxia" },
     { nombre: "Carlos", edad: 27, colorPreferido: "Verde fuxia" }
 ]);
 
