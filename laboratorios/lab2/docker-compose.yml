@@ -6,30 +6,30 @@ services:
     command: mongod --replSet rs0 --bind_ip_all
     volumes:
       - mongo-node-1:/data/db
-    ports:
-      - "27017:27017"
     networks:
       - mongo-network
+    ports:
+      - "27017:27017"
 
   mongo-node-2:
     image: mongo
     command: mongod --replSet rs0 --bind_ip_all
     volumes:
       - mongo-node-2:/data/db
-    ports:
-      - "27018:27017"
     networks:
       - mongo-network
+    ports:
+      - "27018:27017"
 
   mongo-node-3:
     image: mongo
     command: mongod --replSet rs0 --bind_ip_all
     volumes:
       - mongo-node-3:/data/db
-    ports:
-      - "27019:27017"
     networks:
       - mongo-network
+    ports:
+      - "27019:27017"
 
 networks:
   mongo-network:

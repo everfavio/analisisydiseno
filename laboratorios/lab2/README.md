@@ -101,6 +101,7 @@ function crearDocumentoAleatorio() {
 }
 
 // Número de documentos a insertar
+const NUMERO_DOCUMENTOS = 100;
 
 // Insertar documentos en la colección
 for (let i = 0; i < NUMERO_DOCUMENTOS; i++) {
